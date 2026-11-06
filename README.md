@@ -14,7 +14,7 @@ qwen2.5-coder:7b    4.7 GB
 llama3.1:8b         4.9 GB
 ```
 
-For a given prompt, usage statistics is reported and the responses for each model is persisted to an output file (`model_responses.md`).
+All models receive the same prompt. Usage statistics is reported and the responses for each model are persisted to an output file (`model_responses.md`).
 
 It is not intended to be a rigorous benchmark but rather a *quick-and-dirty test of local LLM model performance*. For a more serious benchmark, increase the number of model runs and aggregate the statistics. 
 
