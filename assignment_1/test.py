@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import csv
 import ollama
 
 models = [
@@ -14,6 +14,7 @@ Clearly separate facts from assumptions. Identify the main factors that could sp
 """.strip()
 
 output_file = Path("model_responses.md")
+csv_file = Path("model_responses.csv")
 
 def seconds(ns):
     return ns / 1_000_000_000
@@ -40,6 +41,10 @@ with output_file.open("w", encoding="utf-8") as responses_file:
             )
 
             answer = response["message"]["content"]
+
+            # also write to a CSV file
+            with csv_file.open("a", encoding="utf-8", newline="") as f:
+                csv.writer(f).writerow([model, answer])
 
             # write the model response to an output file, not to stdout (noise supression)
             responses_file.write(f"## Response {i}: {model}\n\n")
