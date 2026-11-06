@@ -8,35 +8,35 @@ Clearly separate facts from assumptions. Identify the main factors that could sp
 Now running local model 1/3: gemma4:e2b
 ---
 Stats:
-- Total time: 55.39 s
-- Model load time: 18.84 s
-- Prompt processing time: 0.39 s
-- Generation time: 36.16 s
+- Total time: 45.35 s
+- Model load time: 6.06 s
+- Prompt processing time: 0.17 s
+- Generation time: 39.11 s
 - Prompt tokens: 108
-- Generated tokens: 1937
-- Generation speed: 53.57 tokens/s
+- Generated tokens: 2146
+- Generation speed: 54.87 tokens/s
 ---
 Now running local model 2/3: qwen2.5-coder:7b
 ---
 Stats:
-- Total time: 45.47 s
-- Model load time: 14.41 s
-- Prompt processing time: 0.33 s
-- Generation time: 30.73 s
+- Total time: 31.94 s
+- Model load time: 3.22 s
+- Prompt processing time: 0.32 s
+- Generation time: 28.40 s
 - Prompt tokens: 121
-- Generated tokens: 721
-- Generation speed: 23.46 tokens/s
+- Generated tokens: 685
+- Generation speed: 24.12 tokens/s
 ---
 Now running local model 3/3: llama3.1:8b
 ---
 Stats:
-- Total time: 59.74 s
-- Model load time: 16.45 s
+- Total time: 54.70 s
+- Model load time: 4.59 s
 - Prompt processing time: 0.40 s
-- Generation time: 42.89 s
+- Generation time: 49.71 s
 - Prompt tokens: 102
-- Generated tokens: 751
-- Generation speed: 17.51 tokens/s
+- Generated tokens: 877
+- Generation speed: 17.64 tokens/s
 ---
 
 Run complete. Responses saved to model_responses.md
