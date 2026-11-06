@@ -1,0 +1,42 @@
+LLM Model comparison: Three increasingly complex local ollama models, same prompt.
+---
+Prompt:
+---
+Forecast how the adoption of electric vehicles in Sweden might change over the next five years.
+Clearly separate facts from assumptions. Identify the main factors that could speed up or slow down adoption and describe optimistic, middle, and pessimistic scenarios, and explain what evidence would change your prediction. Finally state which of the three scenarios you believe to be most likely and motivate why. Finish with a concise summary. You are free to speculate, but do not present it as certainty.
+---
+Now running local model 1/3: gemma4:e2b
+---
+Stats:
+- Total time: 55.39 s
+- Model load time: 18.84 s
+- Prompt processing time: 0.39 s
+- Generation time: 36.16 s
+- Prompt tokens: 108
+- Generated tokens: 1937
+- Generation speed: 53.57 tokens/s
+---
+Now running local model 2/3: qwen2.5-coder:7b
+---
+Stats:
+- Total time: 45.47 s
+- Model load time: 14.41 s
+- Prompt processing time: 0.33 s
+- Generation time: 30.73 s
+- Prompt tokens: 121
+- Generated tokens: 721
+- Generation speed: 23.46 tokens/s
+---
+Now running local model 3/3: llama3.1:8b
+---
+Stats:
+- Total time: 59.74 s
+- Model load time: 16.45 s
+- Prompt processing time: 0.40 s
+- Generation time: 42.89 s
+- Prompt tokens: 102
+- Generated tokens: 751
+- Generation speed: 17.51 tokens/s
+---
+
+Run complete. Responses saved to model_responses.md
