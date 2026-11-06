@@ -33,6 +33,12 @@ The first two observations make sense intuitively, and the models also handle to
 ### Usage (Linux/BSD/Mac):
 
 ```python
+# enter the directory
+cd assignment_1 
+
+# install required packages
+python -m pip install -r requirements.txt
+
 # launch the script
 python -u test.py > test.log 2>&1 &
 
