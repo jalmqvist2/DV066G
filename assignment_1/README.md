@@ -14,9 +14,9 @@ qwen2.5-coder:7b    4.7 GB
 llama3.1:8b         4.9 GB
 ```
 
-All models receive the same prompt. Usage statistics is reported and the responses for each model are persisted to an output file (`model_responses.md`).
+All models receive the same prompt. Usage statistics is reported and the responses for each model are persisted to a output files (`model_responses.md`, `model_reponses.csv`).
 
-It is not intended to be a rigorous benchmark but rather a *quick-and-dirty test of local LLM model performance*. For a more serious benchmark, increase the number of model runs and aggregate the statistics. 
+The study is not intended as a rigorous benchmark but rather a *quick-and-dirty test of local LLM model performance*. For a more serious benchmark, increase the number of model runs and aggregate the statistics. 
 
 ### What to expect
 
@@ -67,10 +67,41 @@ llama3.1:8b    46e0c10c039e    5.6 GB    14%/86% CPU/GPU    4096       llamacpp 
 
 ---
 
+### Evaluation
+
+The prompt given to the models was:
+
+```
+Forecast how the adoption of electric vehicles in Sweden might change over the next five years.
+
+Clearly separate facts from assumptions.
+
+Identify the main factors that could speed up or slow down adoption and describe optimistic, middle, and pessimistic scenarios, and explain what evidence would change your prediction.
+
+Finally state which of the three scenarios you believe to be most likely and motivate why. 
+
+Finish with a concise summary.
+
+You are free to speculate, but do not present it as certainty.
+
+```
+
+#### Were the models correct?
+
+This is actually unknowable. The ground truth will not be available until five years from now.
+
+#### How does this compare to commercial models?
+
+This question is interesting and deserves a separate study. Because the model response involves a large degree of reasoning, metrics would need to be designed carefully to define what constitutes a good model. Performance-wise the local models could be anticipated to be slower and less accurate than commercial models due to local hardware limitations and much less training.
+
+---
+
 ### Ideas for future versions:
 
-- Increase runs per model
+- Increase runs per model. This is necessary to carry out statistical evaluation.
 
 - Let an independent local model review the responses and score them based on prompt-adherence, factual correctness and degree of referenced statements. Build two summary response models: `political` (consensus-based) and `research` (competitive/ensemble-based).
+
+- Add commercial models to the benchmarks
 
 ---
