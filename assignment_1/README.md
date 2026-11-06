@@ -1,6 +1,6 @@
 ### TL/DR
 
-Check to folder `example_output` to view the output artifacts from a complete run.
+Check the folder `example_output` to view the output artifacts from a complete run.
 
 ### Purpose
 
@@ -92,7 +92,7 @@ This is actually unknowable. The ground truth will not be available until five y
 
 #### How does this compare to commercial models?
 
-This question is interesting and deserves a separate study. Because the model response involves a large degree of reasoning, metrics would need to be designed carefully to define what constitutes a good model. Performance-wise the local models could be anticipated to be slower and less accurate than commercial models due to local hardware limitations and much less training.
+This question is interesting and deserves a separate study. Because the model responses involve a large degree of reasoning, metrics would need to be designed carefully to define what constitutes a good model. Performance-wise the local models could be anticipated to be slower and less accurate than commercial models, due to local hardware limitations and much less training.
 
 ---
 
